@@ -2,62 +2,72 @@
 <html>
     <head>
         <title>Alex</title>
-        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        <link rel="stylesheet" href="../CSS/style.css">
     </head>
+
     <body>
        
         <nav id="navbar" class="nav">
             <ul class="navlist">
-              <li><a href=../index.html>Home</a></li>
-              <li><a href=pages/stories.html>Stories</a></li>
-              <li><a href=https://www.linkedin.com/in/alexarielramirez/>Contact</a></li>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="#">Stories</a></li>
+              <li><a href="https://www.linkedin.com/in/alexarielramirez">Contact</a></li>
             </ul>
           </nav>
 
-        <h3>I've been obsessed with design since I was a kid.</h3>
-        <p>As a spectator, mostly.</p>
-        <h4>I have a LOT of (uninteresting?) opinions.</h4>
+        <div id="storiesintro">
+            <h3>I've been obsessed with design since I was a kid.</h3>
+            <p>(As a spectator, mostly.)</p>
+            <h4><u>DISCLAIMER:</u> I have a <em>lot</em> of <del>uninteresting</del> opinions.</h4>
+        </div>
 
-    <div id="parent">
-        <div id="rams">
-            <h3> Dieter Rams is a god</h3>
+        <hr>
+
+    <div class="parent">
+        <div id="rams" class="child">
+            <h3><strong>Dieter Rams is a god.</strong></h3>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/epEWrycjNXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
-        <div id="demna">
-            <h3>Demna ruined BALENCIAGA.</h3>
+        <div id="demna" class="child">
+            <h3><strong>Demna ruined BALENCIAGA.</strong></h3>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/9qiWko_mw5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <h6>(Ok, maybe not ruined; but, it's hard to look past his antics and appreciate the clothes.)</h6>
         </div>
 
-        <div id="zaha">
-            <h3>I miss Zaha Hadid.</h3>
+        <div id="zaha" class="child">
+            <h3><strong>I miss Zaha Hadid.</strong></h3>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/b3Bhv2T8Naw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         </div>
     </div>
 
-        <form>
-            Name: <br>
+    <form>
+        <label for="name">Name:</label>
             <input type="text" name="name">
-            Email: <br>
+        <label for="email">Email:</label>
             <input type="text" name="email">
-            Age: <br>
+        <label for="age">Age:</label>
             <input type="text" name="age">
-            Gender: <br>
-            <input type="radio" name="gender" value="Female">Female <br>
-            <input type="radio" name="gender" value="Male">Male <br>
-            <input type="radio" name="gender" value="Non-Binary">Non-Binary <br>
-
-            <h3>Who are your favorite designers?</h3>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+        
+        <p id="gendertitle">Gender:</p>
+        <label for="female">
+            <input type="radio" name="gender" value="female">Female
+          </label>
+        <label for="male">
+            <input type="radio" name="gender" value="male">Male
+            </label>
+        <label for="non-binary">
+            <input type="radio" name="gender" value="non-binary">Non-Binary
+            </label>
+        <label for="self-identify">
+            <input type="radio" name="gender" value="self-identify">Self-Identify
+            </label>
+            <input type="text" name="gender">
+        </p>
+            <h4>Do you have any favorite designers? If so, who?</h4>
+            <textarea name="" id="" cols="20" rows="5"></textarea>
             <input type="button" name="Submit" value="Submit">
         </form>
-
-
-
-
-
-
 
     </body>
